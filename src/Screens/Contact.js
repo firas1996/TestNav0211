@@ -4,7 +4,7 @@ import styles from "../assets/Style";
 
 const Contact = ({ navigation, route }) => {
   //   const { abc } = route.params;
-  const aaa = "";
+  let aaa = "";
   if (route.params) {
     aaa = route.params.abc;
   }
