@@ -6,7 +6,7 @@ const UserItem = (props) => {
     <View style={styles.userItem}>
       <Text style={styles.userText}>{props.name}</Text>
       <Pressable onPress={props.removeUser.bind(this, props.id)}>
-        <Ionicons name="person-remove" size={24} color="white" />
+        <Ionicons name="star" size={24} color="white" />
       </Pressable>
     </View>
   );
