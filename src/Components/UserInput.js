@@ -1,14 +1,16 @@
 import { View, TextInput, Button, StyleSheet } from "react-native";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { FavUsersContext } from "../store/context/favUsersStore";
 
-const UserInput = ({ addUser }) => {
+const UserInput = () => {
+  const ctx = useContext(FavUsersContext);
   const [userData, setUserData] = useState("");
   const userInputHandler = (data) => {
     setUserData(data);
   };
   const addNewUser = () => {
     if (userData != "") {
-      addUser(userData);
+      ctx.addUser(userData);
       setUserData("");
     }
   };

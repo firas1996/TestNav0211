@@ -8,22 +8,16 @@ const DrawerC = () => {
   return (
     <View style={{ paddingTop: 50 }}>
       <DrawerItem
-        label="Home"
+        label="Users"
         onPress={() => {
-          navigation.navigate("Home");
+          navigation.navigate("Users");
         }}
       />
       <DrawerItem
         style={{ backgroundColor: "#ccc" }}
-        label="Contact"
+        label="FavUsers"
         onPress={() => {
-          navigation.navigate("Contact");
-        }}
-      />
-      <DrawerItem
-        label="About"
-        onPress={() => {
-          navigation.navigate("About");
+          navigation.navigate("FavUsers");
         }}
       />
     </View>

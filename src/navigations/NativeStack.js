@@ -5,6 +5,7 @@ import Home from "../Screens/Home";
 import About from "../Screens/About";
 import Contact from "../Screens/Contact";
 import Users from "../Screens/Users";
+import FavUsers from "../Screens/FavUsers";
 const stack = createNativeStackNavigator();
 const NativeStack = () => {
   return (
@@ -16,6 +17,7 @@ const NativeStack = () => {
       <stack.Screen name="About" component={About} />
       <stack.Screen name="Contact" component={Contact} />
       <stack.Screen name="Users" component={Users} />
+      <stack.Screen name="FavUsers" component={FavUsers} />
     </stack.Navigator>
   );
 };
